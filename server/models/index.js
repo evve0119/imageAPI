@@ -1,4 +1,4 @@
 module.exports = {
     user: require("./user-model"),
-    // image: require("./image-model"),
+    image: require("./image-model"),
 };
