@@ -13,8 +13,8 @@ const cors = require("cors");
 
 mongoose.set("strictQuery", false);
 mongoose
-    .connect("mongodb://localhost:27017/imageAPI")
-    // .connect("mongodb://mongo:27017/imageAPI")
+    // .connect("mongodb://localhost:27017/imageAPI")
+    .connect("mongodb://mongo:27017/imageAPI")
     .then(() => {
         console.log("Connect to mongodb!");
     })
