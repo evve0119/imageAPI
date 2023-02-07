@@ -17,20 +17,20 @@
 <h3>With Docker</h3>
 Open terminal and run the following steps:
 
-1. To clean up previous docker image, please run
+(To clean up previous docker image, please run `docker-compose down -v`)
 
-    `docker-compose down -v`
-
-
-    `brew services stop mongodb-community`
-2.
-    `brew services start mongodb-community`
-
-    `open -a docker`
+1.  Go to project repository:
 
     `cd imageAPI`
 
-    `make run-dev` or `docker-compose up`
+    Open docker
+
+    `open -a docker`
+
+    Run make file script or use docker command
+
+
+    `make run-dev`(`docker-compose up`)
 
     Open browser, go to: http://localhost:3000/
 

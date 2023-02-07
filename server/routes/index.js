@@ -1,4 +1,4 @@
-//Wrap up all the routers or organization.
+//Wrap up all the routes or organization.
 
 module.exports = {
     auth: require("./auth"),

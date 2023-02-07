@@ -10,7 +10,7 @@ const passport = require("passport");
 require("./config/passport")(passport);
 const cors = require("cors");
 
-
+// connect to database
 mongoose.set("strictQuery", false);
 mongoose
     // if you run the project without docker, please replace with the blow code.
@@ -23,6 +23,7 @@ mongoose
         console.log(e);
     });
 
+// middleware and routes
 app.use(express.json());
 app.use(express.urlencoded({ extended:true }));
 app.use(cors());
