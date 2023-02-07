@@ -11,7 +11,9 @@ const ShareComponent = () => {
     ShareService.shareImage(imageId)
     .then((dataset) => {
         setImageUrl(dataset.data.imageUrl);
-        if (!dataset.data.secret){
+        if (!dataset.data) {
+            setMessage("Image doesn't not exist.");
+        } else if (!dataset.data.secret){
             setMessage("Permission denied, you need access from the user to get image!!!");
         } else {
             setMessage("");
