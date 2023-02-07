@@ -14,7 +14,7 @@ https://drive.google.com/file/d/1RQLIJUaHo-N1WNMhZpxZnU5SM52Ui65n/view?usp=shari
 <br/>
 
 
-<h2>Initialize Project<h2>
+<h2>Initialize Project</h2>
 <h3>With Docker</h3>
 Open terminal and run the following steps:
 
