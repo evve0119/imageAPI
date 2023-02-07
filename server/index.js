@@ -13,6 +13,7 @@ const cors = require("cors");
 
 mongoose.set("strictQuery", false);
 mongoose
+    // if you run the project without docker, please replace with the blow code.
     // .connect("mongodb://localhost:27017/imageAPI")
     .connect("mongodb://mongo:27017/imageAPI")
     .then(() => {

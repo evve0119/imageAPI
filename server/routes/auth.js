@@ -4,16 +4,13 @@ const loginValidation = require("../validation").loginValidation;
 const User = require("../models").user;
 const jwt = require("jsonwebtoken");
 
-
+//middleware the test the route is working
 router.use((req, res, next) => {
     console.log("Authorization request receiving...");
     next();
 });
 
-router.get("/testAPI", (req, res) => {
-    return res.send("Authorization auth route success....");
-});
-
+//create registeration information to database
 router.post("/register", async (req, res) => {
     // Confirm the data is validated
     let { error } = registerValidation(req.body);
@@ -39,6 +36,7 @@ router.post("/register", async (req, res) => {
 });
 
 
+//create jwt token for successfully login user.
 router.post("/login", async (req, res) => {
     // Confirm the data is validated
     let { error } = loginValidation(req.body);
